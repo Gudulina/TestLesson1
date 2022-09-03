@@ -47,16 +47,29 @@
 # 4. Напишите программу, которая по заданному номеру четверти
 # показывает диапазон возможных координат точек в этой четверти (x и y).
 
-quarter = int (input('Введите номер четверти: '))
-if quarter == 1:
-    print ('x > 0, y > 0')
-elif quarter == 2:
-    print ('x < 0, y > 0')
-elif quarter == 3:
-    print ('x < 0, y < 0')
-elif quarter == 4:
-    print ('x > 0, y < 0')
-else:
-    print (False)
+# quarter = int (input('Введите номер четверти: '))
+# if quarter == 1:
+#     print ('x > 0, y > 0')
+# elif quarter == 2:
+#     print ('x < 0, y > 0')
+# elif quarter == 3:
+#     print ('x < 0, y < 0')
+# elif quarter == 4:
+#     print ('x > 0, y < 0')
+# else:
+#     print (False)
 
 
+# 5. Напишите программу, которая принимает на вход координаты двух точек 
+# и находит расстояние между ними в 2D пространстве.
+# Пример:
+# A (3,6); B (2,1) -> 5,09
+# A (7,-5); B (1,-1) -> 7,21
+
+import math
+x1 = float(input("x1 - "))
+y1 = float(input("y1 - "))
+x2 = float(input("x2 - "))
+y2 = float(input("y2 - "))
+a = math.sqrt((x2-x1)**2+(y2-y1)**2)
+print('Длина отрезка: {:.2f}'.format(a), sep='')
