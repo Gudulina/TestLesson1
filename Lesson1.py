@@ -15,10 +15,10 @@
 
 # 2. Напишите программу для проверки истинности утверждения ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z для всех значений предикат.
 
-# fand x in range (0, 2):
-#     fand y in range (0,2):
-#         fand z in range (0,2):
-#             print(not(x and y and z) == (not x and not y and not z))
+for x in range (0, 2):
+    for y in range (0,2):
+        for z in range (0,2):
+            print(not(x or y or z) == (not x and not y and not z))
 
 
 # 3. Напишите программу, которая принимает на вход координаты точки (X и Y),
@@ -66,10 +66,10 @@
 # A (3,6); B (2,1) -> 5,09
 # A (7,-5); B (1,-1) -> 7,21
 
-import math
-x1 = float(input("x1 - "))
-y1 = float(input("y1 - "))
-x2 = float(input("x2 - "))
-y2 = float(input("y2 - "))
-a = math.sqrt((x2-x1)**2+(y2-y1)**2)
-print('Длина отрезка: {:.2f}'.format(a), sep='')
+# import math
+# x1 = float(input("x1 - "))
+# y1 = float(input("y1 - "))
+# x2 = float(input("x2 - "))
+# y2 = float(input("y2 - "))
+# a = math.sqrt((x2-x1)**2+(y2-y1)**2)
+# print('Длина отрезка: {:.2f}'.format(a), sep='')
