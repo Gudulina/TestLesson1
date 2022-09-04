@@ -29,20 +29,20 @@
 # x=2; y=4-> 1
 # x=-34; y=-30 -> 3
 
-x = int (input('x = '))
-y = int (input('y = '))
-if x == 0:
-    print ('Точка лежит на оси ОХ')
-elif y == 0:    
-    print ('Точка лежит на оси OY')
-elif x > 0 and y > 0:
-    print ('I')
-elif x < 0 and y > 0:
-    print ('II')
-elif x < 0 and y < 0:
-    print ('III')
-elif x > 0 and y < 0:
-    print ('IV')
+# x = int (input('x = '))
+# y = int (input('y = '))
+# if x == 0:
+#     print ('Точка лежит на оси ОХ')
+# elif y == 0:    
+#     print ('Точка лежит на оси OY')
+# elif x > 0 and y > 0:
+#     print ('I')
+# elif x < 0 and y > 0:
+#     print ('II')
+# elif x < 0 and y < 0:
+#     print ('III')
+# elif x > 0 and y < 0:
+#     print ('IV')
 
 
 # 4. Напишите программу, которая по заданному номеру четверти
@@ -67,6 +67,8 @@ elif x > 0 and y < 0:
 # A (3,6); B (2,1) -> 5,09
 # A (7,-5); B (1,-1) -> 7,21
 
+# Вариант 1
+
 # import math
 # x1 = float(input("x1 - "))
 # y1 = float(input("y1 - "))
@@ -74,3 +76,13 @@ elif x > 0 and y < 0:
 # y2 = float(input("y2 - "))
 # a = math.sqrt((x2-x1)**2+(y2-y1)**2)
 # print('Длина отрезка: {:.2f}'.format(a), sep='')
+
+# Вариант 2
+
+ax = int(input("x1 - "))
+ay = int(input("y1 - "))
+bx = int(input("x2 - "))
+by = int(input("y2 - "))
+ac = ay - by
+bc = bx - ax
+print((ac ** 2 + bc ** 2) ** 0.5)
