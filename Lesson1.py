@@ -5,9 +5,9 @@
 #               1 -> нет
 
 # day = int(input('Введите номер дня недели: '))
-# if day > 7 and day < 1:
-#     print('Введите число от 1 до 7')
-# elif day == 6 and day == 7:
+# if day > 7 or day < 1:
+#     print(False)
+# elif day == 6 or day == 7:
 #     print('Выходной день')
 # else:
 #     print('Будний день')
@@ -31,9 +31,11 @@
 
 # x = int (input('x = '))
 # y = int (input('y = '))
-# if x == 0:
+# if x == 0 and y == 0:
+#     print('Начало координат')
+# elif x == 0:
 #     print ('Точка лежит на оси ОХ')
-# elif y == 0:    
+# elif y == 0:
 #     print ('Точка лежит на оси OY')
 # elif x > 0 and y > 0:
 #     print ('I')
@@ -67,22 +69,10 @@
 # A (3,6); B (2,1) -> 5,09
 # A (7,-5); B (1,-1) -> 7,21
 
-# Вариант 1
-
-# import math
-# x1 = float(input("x1 - "))
-# y1 = float(input("y1 - "))
-# x2 = float(input("x2 - "))
-# y2 = float(input("y2 - "))
-# a = math.sqrt((x2-x1)**2+(y2-y1)**2)
-# print('Длина отрезка: {:.2f}'.format(a), sep='')
-
-# Вариант 2
-
-ax = int(input("x1 - "))
-ay = int(input("y1 - "))
-bx = int(input("x2 - "))
-by = int(input("y2 - "))
-ac = ay - by
-bc = bx - ax
-print((ac ** 2 + bc ** 2) ** 0.5)
+# ax = int(input("x1 - "))
+# ay = int(input("y1 - "))
+# bx = int(input("x2 - "))
+# by = int(input("y2 - "))
+# ac = ay - by
+# bc = bx - ax
+# print(int((ac ** 2 + bc ** 2) ** 0.5 * 100) / 100)
