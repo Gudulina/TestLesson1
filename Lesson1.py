@@ -15,10 +15,10 @@
 
 # 2. Напишите программу для проверки истинности утверждения ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z для всех значений предикат.
 
-for x in range (0, 2):
-    for y in range (0,2):
-        for z in range (0,2):
-            print(not(x or y or z) == (not x and not y and not z))
+# for x in range (0, 2):
+#     for y in range (0,2):
+#         for z in range (0,2):
+#             print(not(x or y or z) == (not x and not y and not z))
 
 
 # 3. Напишите программу, которая принимает на вход координаты точки (X и Y),
@@ -29,19 +29,20 @@ for x in range (0, 2):
 # x=2; y=4-> 1
 # x=-34; y=-30 -> 3
 
-# x = int (input('x = '))
-# y = int (input('y = '))
-
-# if x == 0 or y == 0:    
-#     print ('Значение = 0')
-# elif x > 0 and y > 0:
-#     print ('I')
-# elif x < 0 and y > 0:
-#     print ('II')
-# elif x < 0 and y < 0:
-#     print ('III')
-# elif x > 0 and y < 0:
-#     print ('IV')
+x = int (input('x = '))
+y = int (input('y = '))
+if x == 0:
+    print ('Точка лежит на оси ОХ')
+elif y == 0:    
+    print ('Точка лежит на оси OY')
+elif x > 0 and y > 0:
+    print ('I')
+elif x < 0 and y > 0:
+    print ('II')
+elif x < 0 and y < 0:
+    print ('III')
+elif x > 0 and y < 0:
+    print ('IV')
 
 
 # 4. Напишите программу, которая по заданному номеру четверти
